@@ -1,0 +1,95 @@
+.
+├── backend
+│   ├── functions
+│   │   ├── agent-state-monitor
+│   │   ├── api-handler
+│   │   ├── daily-report-generator
+│   │   ├── escalation-task-creator
+│   │   ├── ivr-journey-parser
+│   │   ├── salesforce-sync-handler
+│   │   ├── summarize-call-handler
+│   │   ├── transcribe-call-handler
+│   │   └── websocket-handler
+│   ├── providers
+│   │   ├── amazon-connect
+│   │   ├── cisco
+│   │   ├── genesys
+│   │   ├── interfaces
+│   │   ├── salesforce
+│   │   └── README.md
+│   └── shared
+│       ├── nodejs
+│       └── python
+├── config
+│   └── environments
+│       ├── dev.json
+│       └── prod.json
+├── docs
+│   ├── adr
+│   ├── api
+│   ├── architecture
+│   │   └── system-overview.md
+│   ├── development
+│   │   └── setup-guide.md
+│   ├── integrations
+│   ├── operations
+│   │   └── runbooks
+│   └── user-guides
+├── e2e-tests
+│   ├── fixtures
+│   ├── tests
+│   ├── package.json
+│   ├── playwright.config.ts
+│   └── README.md
+├── frontend
+│   ├── public
+│   │   └── images
+│   ├── src
+│   │   ├── app
+│   │   ├── components
+│   │   ├── hooks
+│   │   ├── lib
+│   │   ├── stores
+│   │   ├── tests
+│   │   └── types
+│   ├── next.config.js
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+├── infrastructure
+│   ├── bin
+│   │   └── project-buddie.ts
+│   ├── lib
+│   │   ├── constructs
+│   │   ├── stacks
+│   │   └── project-buddie-stack.ts
+│   ├── test
+│   ├── cdk.context.json
+│   ├── cdk.json
+│   ├── package.json
+│   ├── README.md
+│   └── tsconfig.json
+├── scripts
+│   ├── data-migration
+│   ├── deployment
+│   │   └── deploy-all-stacks.sh
+│   ├── monitoring
+│   ├── setup
+│   │   └── bootstrap-aws-accounts.sh
+│   └── testing
+│       └── integration-test.sh
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── create-issues.sh
+├── DIRECTORY_STRUCTURE.txt
+├── LICENSE
+├── package.json
+├── PROJECT_SCAFFOLD_SUMMARY.md
+├── QUICK_START.md
+├── README.md
+├── SECURITY.md
+└── tsconfig.json
+
+58 directories, 35 files

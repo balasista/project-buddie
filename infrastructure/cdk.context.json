@@ -1,0 +1,5 @@
+{
+  "project-buddie:dev:account": "123456789012",
+  "project-buddie:staging:account": "123456789012",
+  "project-buddie:prod:account": "123456789012"
+}

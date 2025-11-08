@@ -1,0 +1,31 @@
+{
+  "environment": "dev",
+  "region": "us-east-1",
+  "accountId": "123456789012",
+  "domainName": "dev.projectbuddie.com",
+  "enableXRay": true,
+  "logRetentionDays": 7,
+  "alertEmail": "dev-alerts@projectbuddie.com",
+  "tags": {
+    "Environment": "dev",
+    "Project": "ProjectBuddie",
+    "ManagedBy": "CDK"
+  },
+  "lambda": {
+    "memorySize": 512,
+    "timeout": 30,
+    "reservedConcurrency": null
+  },
+  "dynamodb": {
+    "billingMode": "PAY_PER_REQUEST",
+    "pointInTimeRecovery": false
+  },
+  "bedrock": {
+    "modelId": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+    "maxTokens": 4096
+  },
+  "salesforce": {
+    "instanceUrl": "https://test.salesforce.com",
+    "apiVersion": "v59.0"
+  }
+}

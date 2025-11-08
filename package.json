@@ -1,0 +1,58 @@
+{
+  "name": "project-buddie",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered contact center intelligence platform for Amazon Connect + Salesforce",
+  "workspaces": [
+    "infrastructure",
+    "frontend",
+    "backend/shared/nodejs",
+    "backend/functions/*/",
+    "e2e-tests"
+  ],
+  "scripts": {
+    "bootstrap": "npm install && cd infrastructure && npm install && cd ../frontend && npm install",
+    "build": "npm run build:backend && npm run build:frontend && npm run build:infra",
+    "build:backend": "cd backend && ./build-all.sh",
+    "build:frontend": "cd frontend && npm run build",
+    "build:infra": "cd infrastructure && npm run build",
+    "test": "npm run test:backend && npm run test:frontend && npm run test:infra",
+    "test:backend": "cd backend && ./test-all.sh",
+    "test:frontend": "cd frontend && npm test",
+    "test:infra": "cd infrastructure && npm test",
+    "test:e2e": "cd e2e-tests && npm test",
+    "deploy:dev": "cd infrastructure && npm run deploy -- --profile dev",
+    "deploy:staging": "cd infrastructure && npm run deploy -- --profile staging",
+    "deploy:prod": "cd infrastructure && npm run deploy -- --profile prod",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md,json}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "aws",
+    "contact-center",
+    "amazon-connect",
+    "salesforce",
+    "ai",
+    "bedrock",
+    "serverless"
+  ],
+  "author": "Your Organization",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/project-buddie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/project-buddie/issues"
+  },
+  "homepage": "https://github.com/your-org/project-buddie#readme"
+}

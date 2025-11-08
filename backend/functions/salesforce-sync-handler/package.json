@@ -1,0 +1,20 @@
+{
+  "name": "salesforce-sync-handler",
+  "version": "1.0.0",
+  "description": "Lambda function to sync call summaries to Salesforce",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.478.0",
+    "@aws-sdk/client-secrets-manager": "^3.478.0",
+    "jsforce": "^2.0.0-beta.29"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.130",
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}
