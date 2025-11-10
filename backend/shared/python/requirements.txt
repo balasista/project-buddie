@@ -15,5 +15,5 @@ moto==4.2.11
 
 # Linting
 pylint==3.0.3
-black==23.12.1
+black==25.11.0
 mypy==1.8.0
